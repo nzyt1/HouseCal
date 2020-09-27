@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Calculator</class>
+ <widget class="QMainWindow" name="Calculator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>749</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calculator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayoutMain">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QGroupBox" name="groupBoxHusIncome">
+          <property name="title">
+           <string>Hus Income</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="1">
+            <layout class="QFormLayout" name="formLayoutHusIncome">
+             <item row="0" column="0">
+              <widget class="QLabel" name="labelHusBaseWage">
+               <property name="text">
+                <string>Base Wage</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEditHusBaseWage">
+               <property name="inputMask">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="labelHusPerfWage">
+               <property name="text">
+                <string>Perf Wage</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEditHusPerfWage"/>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="labelHusSubsidy">
+               <property name="text">
+                <string>Subsidy</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="lineEditHusSubsidy"/>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="labelHusInsure">
+               <property name="text">
+                <string>Insure</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLineEdit" name="lineEditHusInsure">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="labelHusFundRate">
+               <property name="text">
+                <string>Fund Rate(%)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QComboBox" name="comboBoxHusFundRate">
+               <property name="editable">
+                <bool>false</bool>
+               </property>
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
+               <item>
+                <property name="text">
+                 <string>5</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>6</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>7</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>8</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>9</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>10</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>11</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>12</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="labelHusFund">
+               <property name="text">
+                <string>Fund</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLineEdit" name="lineEditHusFund">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="labelHusAward">
+               <property name="text">
+                <string>Award</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <widget class="QLineEdit" name="lineEditHusAward"/>
+             </item>
+             <item row="7" column="0">
+              <widget class="QLabel" name="labelHusDedection">
+               <property name="text">
+                <string>Dedection</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="1">
+              <widget class="QLineEdit" name="lineEditHusDedection"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBoxWifeIncome">
+          <property name="title">
+           <string>Wife Income</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <layout class="QFormLayout" name="formLayoutWifeIncome">
+             <item row="0" column="0">
+              <widget class="QLabel" name="labelWifeBaseWage">
+               <property name="text">
+                <string>Base Wage</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEditWifeBaseWage"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="labelWifePerfWage">
+               <property name="text">
+                <string>Perf Wage</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEditWifePerfWage"/>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="labelWifeSubsidy">
+               <property name="text">
+                <string>Subsidy</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="lineEditWifeSubsidy"/>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="labelWifeInsure">
+               <property name="text">
+                <string>Insure</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLineEdit" name="lineEditWifeInsure">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="labelWifeFundRate">
+               <property name="text">
+                <string>Fund Rate(%)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QComboBox" name="comboBoxWifeFundRate">
+               <item>
+                <property name="text">
+                 <string>5</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>6</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>7</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>8</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>9</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>10</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>11</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>12</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="labelWifeFund">
+               <property name="text">
+                <string>Fund</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLineEdit" name="lineEditWifeFund">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="labelWifeAward">
+               <property name="text">
+                <string>Award</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <widget class="QLineEdit" name="lineEditWifeAward"/>
+             </item>
+             <item row="7" column="0">
+              <widget class="QLabel" name="labelWifeDedection">
+               <property name="text">
+                <string>Dedection</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="1">
+              <widget class="QLineEdit" name="lineEditWifeDedection"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayoutDebat">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayoutPanel">
+          <item>
+           <widget class="QGroupBox" name="groupBoxPay">
+            <property name="title">
+             <string>Payment</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <layout class="QFormLayout" name="formLayoutPay">
+               <item row="0" column="0">
+                <widget class="QLabel" name="labelRent">
+                 <property name="text">
+                  <string>Rent</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="lineEditRent"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="labelFood">
+                 <property name="text">
+                  <string>Food</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="lineEditFood"/>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="labelOthers">
+                 <property name="text">
+                  <string>Others</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="lineEditOthers"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="title">
+             <string>funds</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <layout class="QFormLayout" name="formLayout">
+               <item row="0" column="0">
+                <widget class="QLabel" name="labelReady">
+                 <property name="text">
+                  <string>Ready</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="lineEditReady"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="labelDebt">
+                 <property name="text">
+                  <string>Debt</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="lineEditDebt">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="labelFundBalance">
+                 <property name="text">
+                  <string>Fund Balance</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="lineEditFundBalance"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBoxHouse">
+          <property name="title">
+           <string>House</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <layout class="QFormLayout" name="formLayoutHouse">
+             <item row="0" column="0">
+              <widget class="QLabel" name="labelHousePrice">
+               <property name="text">
+                <string>House Price</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEditHousePrice"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="labelDownPayRate">
+               <property name="text">
+                <string>DownPay Rate(%)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QComboBox" name="comboBoxDownPayRate">
+               <item>
+                <property name="text">
+                 <string>30</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>40</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>50</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>60</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>70</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>80</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>90</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>100</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="labelDownPay">
+               <property name="text">
+                <string>DownPay</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="lineEditDownPay">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="labelFundIoan">
+               <property name="text">
+                <string>Fund Ioan</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLineEdit" name="lineEditFundIoan">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="labelFundRate">
+               <property name="text">
+                <string>Fund Rate</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLineEdit" name="lineEditFundRate">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>3.25</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="labelBankIoan">
+               <property name="text">
+                <string>Bank Ioan</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLineEdit" name="lineEditBankIoan">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="labelBankRate">
+               <property name="text">
+                <string>Bank Rate</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0">
+              <widget class="QLabel" name="labelCycle">
+               <property name="text">
+                <string>Cycle</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="1">
+              <widget class="QComboBox" name="comboBoxCycle">
+               <item>
+                <property name="text">
+                 <string>10</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>15</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>20</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>25</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>30</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <widget class="QDoubleSpinBox" name="doubleSpinBoxBankRate">
+               <property name="suffix">
+                <string>%</string>
+               </property>
+               <property name="minimum">
+                <double>4.650000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>6.370000000000000</double>
+               </property>
+               <property name="singleStep">
+                <double>0.010000000000000</double>
+               </property>
+               <property name="stepType">
+                <enum>QAbstractSpinBox::AdaptiveDecimalStepType</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayoutButton">
+        <item>
+         <spacer name="horizontalSpacerLeft">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="calCapButton">
+          <property name="text">
+           <string>Equal loan</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="calCapIntButton">
+          <property name="text">
+           <string>Equal principal</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacerRight">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>lineEditHusBaseWage</tabstop>
+  <tabstop>lineEditHusPerfWage</tabstop>
+  <tabstop>lineEditHusSubsidy</tabstop>
+  <tabstop>lineEditHusInsure</tabstop>
+  <tabstop>comboBoxHusFundRate</tabstop>
+  <tabstop>lineEditHusFund</tabstop>
+  <tabstop>lineEditHusAward</tabstop>
+  <tabstop>lineEditHusDedection</tabstop>
+  <tabstop>lineEditWifeBaseWage</tabstop>
+  <tabstop>lineEditWifePerfWage</tabstop>
+  <tabstop>lineEditWifeSubsidy</tabstop>
+  <tabstop>lineEditWifeInsure</tabstop>
+  <tabstop>comboBoxWifeFundRate</tabstop>
+  <tabstop>lineEditWifeFund</tabstop>
+  <tabstop>lineEditWifeAward</tabstop>
+  <tabstop>lineEditWifeDedection</tabstop>
+  <tabstop>lineEditRent</tabstop>
+  <tabstop>lineEditFood</tabstop>
+  <tabstop>lineEditOthers</tabstop>
+  <tabstop>lineEditReady</tabstop>
+  <tabstop>lineEditDebt</tabstop>
+  <tabstop>lineEditFundBalance</tabstop>
+  <tabstop>lineEditHousePrice</tabstop>
+  <tabstop>comboBoxDownPayRate</tabstop>
+  <tabstop>lineEditDownPay</tabstop>
+  <tabstop>lineEditFundIoan</tabstop>
+  <tabstop>lineEditFundRate</tabstop>
+  <tabstop>lineEditBankIoan</tabstop>
+  <tabstop>doubleSpinBoxBankRate</tabstop>
+  <tabstop>comboBoxCycle</tabstop>
+  <tabstop>calCapButton</tabstop>
+  <tabstop>calCapIntButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>calCapButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>on_avgCapButton_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>269</x>
+     <y>693</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>339</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditHusBaseWage</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setHusbBaseWage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>259</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>339</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditHusPerfWage</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setHusbPerfWage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>259</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>339</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditHusSubsidy</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setHusbSubsidy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>381</x>
+     <y>168</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>339</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditHusAward</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setHusbAward()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>381</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>339</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditWifeAward</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setWifeAward()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>771</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>339</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditWifeBaseWage</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setWifeBaseWage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>652</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>339</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditWifePerfWage</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setWifePerfWage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>652</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>339</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditWifeSubsidy</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setWifeSubsidy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>771</x>
+     <y>168</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>339</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditRent</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setFamilyRent()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>325</x>
+     <y>424</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditFood</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setFamilyFood()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>325</x>
+     <y>458</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditOthers</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setFamilyOthers()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>325</x>
+     <y>492</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditReady</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setFamilyMoney()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>374</x>
+     <y>583</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditHousePrice</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setHousePrice()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>771</x>
+     <y>423</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBoxDownPayRate</sender>
+   <signal>activated(int)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setHouseDownpayRate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>771</x>
+     <y>456</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditFundIoan</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setHouseFundIoan()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>771</x>
+     <y>524</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBoxCycle</sender>
+   <signal>activated(int)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setHouseCycle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>771</x>
+     <y>658</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBoxHusFundRate</sender>
+   <signal>activated(int)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setHusbFundRate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>262</x>
+     <y>222</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBoxWifeFundRate</sender>
+   <signal>activated(int)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setWifeFundRate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>652</x>
+     <y>222</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>doubleSpinBoxBankRate</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setHouseBankIoanRate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>771</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>calCapIntButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>on_avgCapIntButton_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>610</x>
+     <y>709</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditHusDedection</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setHusbDedection()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>262</x>
+     <y>323</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditWifeDedection</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setWifeDedection()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>652</x>
+     <y>323</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditFundBalance</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Calculator</receiver>
+   <slot>setFamilyFundBalance()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>262</x>
+     <y>638</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_avgCapButton_clicked()</slot>
+  <slot>setHusbBaseWage()</slot>
+  <slot>setHusbPerfWage()</slot>
+  <slot>setHusbSubsidy()</slot>
+  <slot>setHusbAward()</slot>
+  <slot>setWifeBaseWage()</slot>
+  <slot>setWifePerfWage()</slot>
+  <slot>setWifeSubsidy()</slot>
+  <slot>setWifeFundRate()</slot>
+  <slot>setWifeAward()</slot>
+  <slot>setHusbFundRate()</slot>
+  <slot>setFamilyRent()</slot>
+  <slot>setFamilyFood()</slot>
+  <slot>setFamilyOthers()</slot>
+  <slot>setFamilyMoney()</slot>
+  <slot>setFamilyDebt()</slot>
+  <slot>setHousePrice()</slot>
+  <slot>setHouseDownpayRate()</slot>
+  <slot>setHouseFundIoan()</slot>
+  <slot>setHouseBankIoanRate()</slot>
+  <slot>setHouseCycle()</slot>
+  <slot>on_avgCapIntButton_clicked()</slot>
+  <slot>setHusbDedection()</slot>
+  <slot>setWifeDedection()</slot>
+  <slot>setFamilyFundBalance()</slot>
+ </slots>
+</ui>
