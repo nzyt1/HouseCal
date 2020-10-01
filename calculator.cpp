@@ -106,7 +106,12 @@ int Calculator::calAvgCap()
 
         if(index == 0)
         {
-            repay->setSavings(0 + repay->getIncome() - repay->getExpers());
+            if(family->getDebt() > 0)
+            {
+                repay->setSavings(0 + repay->getIncome() - repay->getExpers());
+            }else{
+                repay->setSavings(0 + repay->getIncome() - repay->getExpers() + family->getSaving() - house->getDownpay());
+            }
             repay->setFundSavings(family->getFundBalance() + husb->getFund() + wife->getFund() - repay->getFundRepay());
 
             repay->setBankInterest(house->getBankIoan() * house->getBankRate() / 12);
@@ -159,7 +164,12 @@ int Calculator::calAvgCapInt()
 
         if(index == 0)
         {
-            repay->setSavings(0 + repay->getIncome() - repay->getExpers());
+            if(family->getDebt() > 0)
+            {
+                repay->setSavings(0 + repay->getIncome() - repay->getExpers());
+            }else{
+                repay->setSavings(0 + repay->getIncome() - repay->getExpers() + family->getSaving() - house->getDownpay());
+            }
             repay->setFundSavings(family->getFundBalance() + husb->getFund() + wife->getFund() - repay->getFundRepay());
 
             repay->setBankInterest(house->getBankIoan() * house->getBankRate() / 12);
